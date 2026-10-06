@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME · Software Developer</title>
+  <meta name="description" content="YOUR NAME is a software developer building backend systems, APIs and integrations with C#, .NET and Oracle.">
+  <meta name="theme-color" content="#0e1014">
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YOUR NAME · Software Developer">
+  <meta property="og:description" content="Building reliable systems behind the scenes: APIs, integrations and enterprise backends.">
+  <meta property="og:url" content="https://YOUR-DOMAIN/">
+  <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YOUR NAME · Software Developer">
+  <meta name="twitter:description" content="Building reliable systems behind the scenes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" id="brand"></a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      <nav id="menu" class="menu" aria-label="Primary">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <span class="menu-social" id="navSocial"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="headline"></h1>
+        <p class="lead" id="intro"></p>
+        <div class="cta" id="heroCta"></div>
+        <p class="status" id="status"></p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="term">
+          <div class="term-bar"><i></i><i></i><i></i><span>api.local</span></div>
+          <pre id="termOut"></pre>
+        </div>
+        <div class="pipe">
+          <span class="pn">API</span><span class="pl"></span><span class="pn">Adapter</span><span class="pl"></span><span class="pn">Business system</span><span class="pl"></span><span class="pn">Database</span>
+          <b class="dot"></b>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="about" aria-labelledby="h-about">
+      <h2 id="h-about" class="sr">About</h2>
+      <div class="about">
+        <p class="statement reveal" id="aboutStatement"></p>
+        <div class="reveal">
+          <div class="prose" id="bio"></div>
+          <p class="mini">Currently working with</p>
+          <div class="badges" id="current"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="skills" aria-labelledby="h-skills">
+      <h2 id="h-skills" class="reveal">Technology</h2>
+      <div class="skills" id="skillGrid"></div>
+    </section>
+
+    <section class="wrap sec" id="work" aria-labelledby="h-work">
+      <h2 id="h-work" class="reveal">Selected work</h2>
+      <div class="projects" id="projectList"></div>
+    </section>
+
+    <section class="wrap sec" id="systems" aria-labelledby="h-sys">
+      <h2 id="h-sys" class="reveal">How I think about systems</h2>
+      <p class="sub reveal" id="sysIntro"></p>
+      <div class="arch" id="archGrid"></div>
+    </section>
+
+    <section class="wrap sec" id="experience" aria-labelledby="h-exp">
+      <h2 id="h-exp" class="reveal">Experience</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="wrap sec" id="github" aria-labelledby="h-gh">
+      <h2 id="h-gh" class="reveal">Open source &amp; GitHub</h2>
+      <p class="sub reveal" id="ghBlurb"></p>
+      <div class="repos" id="repoGrid"></div>
+      <div class="gh-meta reveal">
+        <div><p class="mini">Contribution activity</p><div class="heat" id="heat" role="img" aria-label="Contribution activity placeholder"></div></div>
+        <div><p class="mini">Most-used technologies</p><div class="badges" id="topTech"></div></div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="interests" aria-labelledby="h-int">
+      <h2 id="h-int" class="reveal small">Outside the editor</h2>
+      <div class="interests" id="interestGrid"></div>
+    </section>
+
+    <section class="wrap sec" id="contact" aria-labelledby="h-contact">
+      <div class="contact reveal">
+        <h2 id="h-contact"></h2>
+        <p class="lead" id="contactText"></p>
+        <div class="cta" id="contactCta"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <div><strong id="footName"></strong><p>Built with curiosity and code.</p></div>
+    <div class="foot-links" id="footLinks"></div>
+    <small id="copy"></small>
+  </footer>
+
+  <dialog id="egg" class="egg" aria-label="Terminal">
+    <pre>$ whoami
+software_developer
+
+$ build
+systems
+
+$ status
+operational
+</pre>
+    <p class="mini">Press Esc to close</p>
+  </dialog>
+
+  <noscript><p class="wrap">Please enable JavaScript to view this site.</p></noscript>
+  <script src="profile.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
